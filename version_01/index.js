@@ -5,7 +5,9 @@ let qrImage = document.getElementById("qrImage");
 let qrText = document.getElementById("qrText");
 
 function generateQR() {
-  qrImage.src = `${qrCodeApi}${qrText.value}`;
-  qrImage.alt = `${qrText.value} qr code`;
-  imgBox.classList.add("show-img");
+  if (qrText.value.length > 0) {
+    qrImage.src = `${qrCodeApi}${qrText.value}`;
+    qrImage.alt = `${qrText.value} qr code`;
+    imgBox.classList.add("show-img");
+  }
 }
