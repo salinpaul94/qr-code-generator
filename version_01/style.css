@@ -31,3 +31,21 @@ body{
   margin: 10px 0 20px;
   border-radius: 5px;
 }
+.container button{
+  width: 100%;
+  height: 50px;
+  background: #262a2f;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 600;
+  transition: all 0.8s;
+}
+.container button:hover{
+  background: #2878d9;
+  box-shadow: 0 10px 10px rgba(29, 78, 184, 0.3);
+}
