@@ -11,5 +11,9 @@ function generateQR() {
     imgBox.classList.add("show-img");
   } else {
     qrText.classList.add("error");
+    setTimeout(() => {
+      qrText.classList.remove("error");
+      imgBox.classList.remove("show-img");
+    }, 1000);
   }
 }
