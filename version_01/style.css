@@ -49,3 +49,18 @@ body{
   background: #2878d9;
   box-shadow: 0 10px 10px rgba(29, 78, 184, 0.3);
 }
+#imgBox{
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+}
+#imgBox img{
+  width: 100%;
+  padding: 10px;
+}
+#imgBox.show-img{
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
