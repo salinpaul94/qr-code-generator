@@ -9,5 +9,7 @@ function generateQR() {
     qrImage.src = `${qrCodeApi}${qrText.value}`;
     qrImage.alt = `${qrText.value} qr code`;
     imgBox.classList.add("show-img");
+  } else {
+    qrText.classList.add("error");
   }
 }
